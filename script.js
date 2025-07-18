@@ -11,7 +11,6 @@ const postContainer = document.getElementById('postContainer');
 loginBtn.onclick = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
-};
 
 logoutBtn.onclick = () => auth.signOut();
 
