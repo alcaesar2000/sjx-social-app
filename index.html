@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SJX</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>SJX</h1>
+    <button id="loginBtn">تسجيل الدخول باستخدام Google</button>
+    <button id="logoutBtn" style="display:none;">تسجيل الخروج</button>
+</header>
+
+<div class="container" id="postContainer" style="display:none;">
+    <textarea id="postInput" placeholder="ماذا تريد أن تكتب؟"></textarea>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="addPost()">نشر</button>
+    <div id="posts"></div>
+</div>
+</body>
+</html>
